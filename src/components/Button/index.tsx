@@ -1,5 +1,41 @@
 import React from "react";
 
-export default function Button(text: string) {
-  return <div>text</div>;
+export default function Button() {
+  return (
+    <div className="flex flex-col justify-center items-center h-[100vh]">
+      <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-6 3xl:p-![18px] bg-white undefined">
+        <div className="relative flex flex-row justify-between">
+          <h4 className="text-xl font-bold text-navy-700 dark:text-white">
+            Horizon UI Buttons
+          </h4>
+        </div>
+
+        <div className="h-full w-full mt-5 flex flex-col">
+          <button className="rounded-xl bg-brand-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700">
+            Default
+          </button>
+          <button className="rounded-full bg-blue-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-600 active:bg-blue-700">
+            Blue
+          </button>
+          <button className="rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-red-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5">
+            Red
+          </button>
+          <button className="rounded-xl bg-gradient-to-br from-[#6025F5] to-[#FF5555] px-5 py-3 text-base font-medium text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50">
+            Button 16
+          </button>
+        </div>
+      </div>
+      <p className="font-normal text-navy-700 mt-20 mx-auto w-max">
+        Notifications Card component from{" "}
+        <a
+          href="https://horizon-ui.com?ref=tailwindcomponents.com"
+          target="_blank"
+          className="text-brand-500 font-bold"
+          rel="noreferrer"
+        >
+          Horizon UI Tailwind React
+        </a>
+      </p>
+    </div>
+  );
 }

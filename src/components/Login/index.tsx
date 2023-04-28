@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
-    <div className="bg-gray-100 w-full h-full">
+    <div className="bg-gray-100 h-screen flex flex-col justify-center">
       <div className="container mx-auto py-8">
         <h1 className="text-2xl font-bold mb-6 text-center">
           Registration Form
         </h1>
         <form
           action=""
-          className=" w-full h-full max-w-sm mx-auto bg-white p-8 rounded-md shadow-md"
+          className="max-w-sm mx-auto bg-white p-8 rounded-md shadow-md"
         >
           <div className="mb-4">
             <label
